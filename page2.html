@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>הרצאה על חיפושיות</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #cce4f6, #88bde6);
+    color: #fff;
+    text-align: center;
+  }
+
+  .container {
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+  .container:hover {
+    transform: translateY(-5px);
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  a {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin-top: 20px;
+  }
+
+  a:hover {
+    background: rgba(255,255,255,0.4);
+    transform: scale(1.05);
+  }
+
+  /* תמונה מתחת לכותרת */
+  .beetle-img {
+    width: 150px;          /* רוחב התמונה */
+    margin: 20px auto;     /* מרכז ומרווח עליון/תחתון */
+    display: block;
+    border-radius: 15px;   /* פינות עגלגלות */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>רוצה ללכת להרצאה על חיפושיות?</h1>
+
+    <!-- התמונה ממש מתחת לכותרת -->
+    <img src="img.jpg" alt="חיפושית חמודה" class="beetle-img">
+
+    <a href="page3.html">↠ </a>
+  </div>
+
+</body>
+</html>

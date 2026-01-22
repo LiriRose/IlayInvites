@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>ביטלס או לא?</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #cce4f6, #88bde6); /* כחול עדין */
+    color: #fff;
+    text-align: center;
+  }
+
+  .container {
+.container {
+  background: rgba(0,0,0,0.3); /* יותר ניגודיות */
+  color: #fff; /* וודא שזה מופיע */
+}    padding: 50px 30px;
+    border-radius: 25px;
+    backdrop-filter: blur(12px);
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .container:hover {
+    transform: translateY(-5px);
+  }
+
+  h1 {
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  button {
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  button:hover {
+    background: rgba(255,255,255,0.4);
+    transform: scale(1.05);
+  }
+
+  #result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  a:hover {
+    background: rgba(255,255,255,0.4);
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>סתם לא על חיפושיות<br>על הביטלס<br>
+
+    זה ביום שני בערב</h1>
+
+    <button onclick="handleAnswer('כן')">כן</button>
+    <button onclick="handleAnswer('לא')">לא</button>
+
+    <p id="result"></p>
+
+    <a href="page4.html">↠ </a>
+  </div>
+
+  <script>
+    function handleAnswer(answer) {
+      if (answer === "כן") {
+        document.getElementById("result").innerText = "יש";
+      } else {
+        document.getElementById("result").innerText = "אוף";
+      }
+    }
+  </script>
+
+</body>
+</html>
